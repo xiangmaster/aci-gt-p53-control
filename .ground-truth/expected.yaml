@@ -1,0 +1,10 @@
+id: P53-C
+repository: aci-gt-p53-control
+visibility: public
+stage: P5
+rule: P5.3
+kind: control
+atomic_variable: "consumer 无 validation gate"
+expected_status: REACHABLE
+setup: AUTO_FILES
+configuration_state: COMPLETE
