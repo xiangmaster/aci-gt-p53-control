@@ -1,0 +1,14 @@
+name: Ground Truth P53-C
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fixture:
+    runs-on: ubuntu-latest
+    if: ${{ false }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      AGENT_OUTPUT: ground-truth-agent-output
+    steps:
+      - run: ./scripts/consume.sh "$(cat agent-output.txt)"
